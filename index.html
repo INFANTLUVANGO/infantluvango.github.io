@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <style>
+        * {
+            padding:0px; 
+            margin:0px;
+        }
+
+        body {
+            background-color: black;
+            font-size: 16px;
+            padding: 0px;
+        }
+
+        .W {
+            color: white;
+            display: flex;
+            /*background-color: lightslategray;*/
+        }
+        .down{
+            display: flex;
+            width: 100%;
+            padding: opx; 
+            
+        }
+
+        .left {
+            text-align: center;
+            width: 100vw;
+            /*border-right: aliceblue solid 2px;*/
+            margin-top: 70px;
+            /*height: 500px;
+            background-color: cornflowerblue;
+            position: relative;*/
+            font-size :44px;
+        }
+
+        .right {
+            background-color:crimson;
+            width: 100vw;
+            height: 30vh;
+            color: white;
+            margin-left: 2px;
+            padding: 5px;
+            margin-top: 0;
+        }
+
+        .near {
+            background-color:crimson;
+            width: 100vw;
+            height: 30vh;
+            color: white;
+            padding: 5px;
+            font-size: 17px;
+        }
+        h2{
+            color: crimson;
+            margin-top: 5px;
+            padding-bottom: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 34px;
+        }
+        h3{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+        }
+
+        .d{
+            color:crimson;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            width: 60%;
+            background-color: rgb(13, 41, 41);
+            
+        }
+        .i{
+            color: crimson;
+            font-weight: 100;
+            margin-left: 20px;
+            font-size: 20px;
+            padding: 12px;
+
+        }
+        .s{
+            color: white;
+            padding: 5px; 
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        .e{
+            color:white;
+            margin-left: 0PX;
+            width: 49%; 
+            
+        }
+        .l{
+           padding: 10px;
+           font-size: medium;
+           margin-left: 10px;
+        }
+        .O{
+            height:10px ;
+            width: 50px;
+           background-color: antiquewhite;
+           color: antiquewhite;
+        }
+        .b{
+            padding: 10px;
+            font-size: 20px;
+            color: white;
+        }
+        .lang{
+            color: white;
+            padding: 2px;
+            font-size: small;
+        }
+        .deep{
+            display: flex;
+
+        }
+    
+        .intern {
+            color: white;
+            width: 60%;
+            margin-top: 0px;
+            background-color:  rgb(13, 41, 41);;
+            padding-top: 40px;
+        }
+        .projects {
+            color: white;
+            width: 50%;
+            margin-top: 10px;
+            padding-top: 40px;
+        }
+
+        .deepdown{
+            display: flex;
+        }
+        ul{
+           margin-left: 19px;
+           
+        }
+        .image{
+              background: url('resume.jpg') no-repeat;
+              background-size: 100%;
+              width: 50%;
+        }
+        .u{
+            width: 60%;
+            color: white;
+            padding: 5px; 
+            font-size: 15px;
+            background-color:  rgb(13, 41, 41);;
+        }
+        li{
+           padding: 3px;
+           font-size: 19px;
+           text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .web{
+            background-color: rgb(203, 191, 191);
+            color: crimson;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            font-size: 20px;
+        }
+        .sc{
+            color: white;
+        }
+        .lan{
+            padding-top:20px;
+        }
+
+
+
+        * {box-sizing:border-box}
+
+
+/* Container for skill bars */
+.container {
+  width: 90%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  padding-bottom: ;
+}
+
+.skills {
+  text-align:right ; /* Right-align text */
+  padding-top: 0px;/* Add top padding */
+  padding-bottom: 0px; /* Add bottom padding */
+  color:crimson ;
+}
+h4{
+    padding: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.html {width: 90%; background-color: crimson;} /* Green */
+.css {width: 80%; background-color: crimson;} /* Blue */
+.js {width: 65%; background-color: crimson;} /* Red */
+.python {width: 60%; background-color: crimson;} /* Dark Grey */
+.java {width: 70%; background-color: crimson;} /* Green */
+.c {width: 70%; background-color: crimson;} /* Green */
+.bootstrap {width: 30%; background-color: crimson;} /* Green */
+
+        
+        @media only screen and (max-width: 600px) {
+            h2{
+                font-size: 24px;
+            }
+            .i{
+                font-size: 10px;
+            }
+            .s{
+                font-size: 12px;
+            }
+            h4{
+                font-size: 10px;
+            }
+            li{
+              font-size: 15px;
+            }
+            .b{
+                font-size: 10px;
+            }
+            h3{
+                font-size: 15px;
+            }
+            .near{
+                font-size: 10px;
+            }
+            li{
+                font-size: 11px;
+            }
+            .left{
+                font-size: 24px;
+            }
+            .web{
+                 font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="W">
+        <div class="left"> <span>INFANT LUVANGO </span><br><span class="web">Web Developer</span>
+        </div>
+        <div class="right">
+            <h3>REACH ME</h3><br>
+            <ul type="">
+              <li>6374477041</li>
+              <li><a>luvangoinfant@gmail.com</a></li>
+              <li><a href="https://instagram.com/shane_infant_?igshid=MzNINGNkZWQ4Mg==">Instagram</a></li>
+              <li><a href="">Facebook</a> </li>
+              <li><a href="https://github.com/INFANTLUVANGO">Github</a</li>
+              <li><a href="https://www.linkedin.com/in/infant-luvango-p-958a6722a">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="near">
+            <h3>ABOUT ME</h3><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis placeat repellat modi neque itaque nemo necessitatibus libero, ad reprehenderit officiictetur adipisicing elit. Nam saepe assumenda
+        </div>
+    </div>
+        
+    <div class="down">
+        <div class="d">
+            <h2>CERTIFICATION</h2>
+        
+           <div class="s"><span class="i">Great learnings :</span> Completion  Of  Data Structure  in  C </div>
+           <div class="s"><span class="i">HackerRank :</span> Certified  In  Python </div>
+           <div class="s"><span class="i">SkillAP A P S S D C :</span> 30 Days  Masterclass On  Artificial Intelligence </div>
+           <div class="s"><span class="i">Learnathon :</span> Certificate  Of  Participation </div>
+           <div class="s"><span class="i">LinkedIn :</span> HTML Essentials , Cascading Style Sheets , JAVASCRIPT </div>
+           <div class="s"><span class="i">LinkedIn :</span> JAVA Programming </div>
+           <div class="s"><span class="i">Skill Rack Platform :</span> Completed 600 + Programs </div>
+       </div>
+       <div class="e">
+           <h2>SKILLS</h2>
+            <p><h4>HTML</h4></p>
+                <div class="container">
+                  <div class="skills html">.</div>
+                </div>
+
+            <p><h4>CSS</h4></p>
+                <div class="container">
+                  <div class="skills css">.</div>
+                </div>
+
+            <p><h4>JAVASCRIPT</h4></p>
+                <div class="container">
+                  <div class="skills js">.</div>
+                </div>
+
+            <p><h4>PYTHON</h4></p>
+                <div class="container">
+                  <div class="skills python">.</div>
+                </div>
+
+            <p><h4>C</h4></p>
+                <div class="container">
+                  <div class="skills c">.</div>
+                </div>
+
+            <p><h4>JAVA</h4></p>
+                <div class="container">
+                  <div class="skills java">.</div>
+                </div>
+
+            <p><h4>BOOTSTRAP</h4></p>
+                <div class="container">
+                  <div class="skills bootstrap">.</div>
+                </div>
+
+    
+       </div>
+    </div>
+    
+
+    <div class="deep">
+       <div class="u">
+        <h2>EDUCATION</h2>
+           <div class="sc">
+             <h4>SSLC - 2018 - 2019</h4> <span class="b">St.JOSEPH'S  MATRIC  HIGH  SCHOOL <b>PERCENTAGE : 86%</b> </span>
+           
+
+           
+            <h4>SSLC - 2020 - 2021</h4> <span class="b">SRI BHARATHIDASAN  MATRIC  Hr.Sec  SCHOOL <b>PERCENTAGE : 89.16%</b> </span>
+
+
+          
+            <h4>SSLC - 2021 - 2025</h4> <span class="b">St.JOSEPH'S  INSTITUTE  OF  TECHNOLOGY <b>CGPA : 8.37 , PURSUING</b> </span>
+          </div>
+        <h2 class="lan">LANGUAGE KNOWN</h2>
+             <div class="lang"><h4>Tamil</h4></div>
+             <div class="lang"><h4>English</h4></div>
+          
+       </div>
+
+       <div class="image">
+
+       </div>
+
+
+    </div>
+    
+
+    <div class="deepdown">
+        <div class="intern">
+          <h2>INTERNSHIP</h2>
+               
+                <p class="b">FULL STACK WEB DEVELOPMENT AT <b>SPARKS FOUNDATION</b></p>
+            
+                <p class="b">FULL STACK WEB DEVELOPMENT AT <b>SPARKS FOUNDATION</b></p>
+            
+                <p class="b">FULL STACK WEB DEVELOPMENT AT <b>SPARKS FOUNDATION</b></p>
+            
+                <p class="b">FULL STACK WEB DEVELOPMENT AT <b>SPARKS FOUNDATION</b></p>     
+
+        </div>
+
+        <div class="projects">
+            <h2>PROJECTS</h2>
+                <p class="b">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio molestias dolores a, quasi soluta at consequuntur commodi quod eius asperiores sunt repellendus exercitationem dolorem dolore numquam, dignissimos itaque in sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam debitis eum culpa id dolor repellat vitae veniam atque fuga? Eum animi repellendus numquam aspernatur tempora! Cumque provident distinctio velit in.
+
+
+                </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
