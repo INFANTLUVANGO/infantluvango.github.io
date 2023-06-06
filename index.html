@@ -16,23 +16,26 @@
             background-color: black;
             font-size: 16px;
             padding: 0px;
+            color: white;
         }
 
         .W {
             color: white;
             display: flex;
             /*background-color: lightslategray;*/
+            height: fit-content;
+            width: 100%;
         }
         .down{
             display: flex;
             width: 100%;
             padding: opx; 
-            
+            background-color: rgb(13, 41, 41);
         }
 
         .left {
             text-align: center;
-            width: 100vw;
+            width: 40%;
             /*border-right: aliceblue solid 2px;*/
             margin-top: 70px;
             /*height: 500px;
@@ -43,8 +46,8 @@
 
         .right {
             background-color:crimson;
-            width: 100vw;
-            height: 30vh;
+            width: 30%;
+           /* height: 30vh;*/
             color: white;
             margin-left: 2px;
             padding: 5px;
@@ -53,8 +56,8 @@
 
         .near {
             background-color:crimson;
-            width: 100vw;
-            height: 30vh;
+            width: 30%;
+           /* height: 30vh;*/
             color: white;
             padding: 5px;
             font-size: 17px;
@@ -78,7 +81,7 @@
             margin-bottom: 0px;
             width: 60%;
             background-color: rgb(13, 41, 41);
-            
+            border-right:crimson dashed 15px;
         }
         .i{
             color: crimson;
@@ -96,7 +99,7 @@
         }
         .e{
             color:white;
-            margin-left: 0PX;
+            margin-left: 10PX;
             width: 49%; 
             
         }
@@ -127,21 +130,24 @@
         }
     
         .intern {
-            color: white;
+            color: white; 
             width: 60%;
             margin-top: 0px;
-            background-color:  rgb(13, 41, 41);;
+            background-color:  rgb(13, 41, 41);
             padding-top: 40px;
+            border-right:crimson dashed 15px;
         }
         .projects {
             color: white;
             width: 50%;
             margin-top: 10px;
             padding-top: 40px;
+            margin-left: 10px;
         }
 
         .deepdown{
             display: flex;
+            background-color: rgb(13, 41, 41);
         }
         ul{
            margin-left: 19px;
@@ -149,14 +155,14 @@
         }
         .image{
               background: url('resume.jpg') no-repeat;
-              background-size: 100%;
+              background-size: cover;
               width: 50%;
         }
         .u{
             width: 60%;
             color: white;
             padding: 5px; 
-            background-color:  rgb(13, 41, 41);;
+           /*background-color:  rgb(13, 41, 41);;*/
         }
         li{
            padding: 3px;
@@ -175,8 +181,6 @@
         }
         h4{
             font-size: 20px;
-            padding: 2px; 
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         .sc{
             color: white;
@@ -184,7 +188,12 @@
         .lan{
             padding-top:20px;
         }
-
+        .powered{
+            font-size: 20px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: monospace;
+        }
 
 
         * {box-sizing:border-box}
@@ -202,6 +211,10 @@
   padding-top: 0px;/* Add top padding */
   padding-bottom: 0px; /* Add bottom padding */
   color:crimson ;
+}
+h4{
+    padding: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .html {width: 90%; background-color: crimson;} /* Green */
@@ -248,7 +261,10 @@
                  font-size: 12px;
             }
             .image{
-                 background-size:cover;
+                background-size: cover;
+            }
+            .w{
+                height: fit-content;
             }
         }
     </style>
@@ -379,6 +395,9 @@
 
         </div>
 
+    </div>
+    <div class="powered">
+        <div>DEVELOPED  BY  <b>INFANT LUVANGO P</b></div>
     </div>
 
 </body>
